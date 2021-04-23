@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <locale.h>
 #include <time.h>
+#include <conio.h>
+#include <string.h>
 
 void Prepare (int *Mode, int *Difficulty) // выбираем режим сложности тренировки
 {
@@ -69,11 +71,11 @@ bool Exit(bool exit) // Проверяем хочет ли пользовате�
     return exit;
 } //
 
-bool Comparator(char *Val_One, bool *Quit) // сравнивает значения
+bool Comparator(char *Val_One, bool *Quit) // сравнивает значения вводимые пользователем с программными
 {
     char Val_Two;
     printf("\n |\\\\\\| ");
-    scanf("%c", &Val_Two);
+    Val_Two = getch();
     if(Val_Two == '!')
     {
         *Quit = true;
@@ -84,6 +86,48 @@ bool Comparator(char *Val_One, bool *Quit) // сравнивает значен�
         return true;
     }
     return false;
+}
+
+void Pattern_Read(FILE *Res) // Исполняемое тело для режимов работающих с файлами
+{
+    bool Quit = false;
+    long int Score = 0;
+    int n = 0, j = 0;
+    char Text[60] = {}, Val_One;
+
+    fscanf(Res,"%d",&n);
+    int sz;
+    while(Quit != true)
+    {
+        rewind(Res);
+        fgets(Text,60,Res);
+        sz = rand()% n+1;
+        for(int i = 0; i < sz; i++)
+        {
+            fgets(Text,60,Res);
+        }
+
+        for (int k = 0; k < strlen(Text); k++)
+        {
+            do
+            {
+                j = k;
+                system("cls");
+                printf("Для выхода введите - !\n\t\t\tСчёт: %d", Score);
+                printf("\n|||||||: ");
+                Val_One = Text[j];
+                for(j; j < strlen(Text);j++)
+                {
+                    printf("%c", Text[j]);
+                }
+            }while(Comparator(&Val_One, &Quit) != true);
+            if(Quit == true)
+            {
+                break;
+            }
+            Score++;
+        }
+    }
 }
 
 void Words_One()
@@ -116,10 +160,21 @@ void Words_One()
 void Words_Two()
 {
 
+    FILE *Res;
+    Res = fopen("text/l2.txt","r");
+
+    Pattern_Read(Res);
+
+    fclose(Res);
 }
 void Words_Three()
 {
+    FILE *Res;
+    Res = fopen("text/l3.txt","r");
 
+    Pattern_Read(Res);
+
+    fclose(Res);
 }
 void Numbers_One()
 {
@@ -141,17 +196,32 @@ void Numbers_One()
 }
 void Numbers_Two()
 {
+    FILE *Res;
+    Res = fopen("text/n2.txt","r");
 
+    Pattern_Read(Res);
+
+    fclose(Res);
 }
 void Numbers_Three()
 {
+    FILE *Res;
+    Res = fopen("text/n3.txt","r");
 
+    Pattern_Read(Res);
+
+    fclose(Res);
 }
 void Words_and_Numbers()
 {
+    FILE *Res;
+    Res = fopen("text/lan.txt","r");
 
+    Pattern_Read(Res);
+
+    fclose(Res);
 }
-void Duel(int Mode, int Difficulty)
+void Duel(int Mode, int Difficulty) // подключаем модуль режима на основе выбранных параметров
 {
     if(Mode == 1)
     {
@@ -205,16 +275,12 @@ int main ()
         printf("\n%d %d\n", Mode, Difficulty);                  // выводим значения, которые выбрал пользователь
         Duel(Mode, Difficulty);
 
-
-
         system("PAUSE");                                        //
         Game = Exit(&Game);                                     // Проверяем хочет ли пользователь потренироваться ещщё раз или нет
     }
     system("cls");
     printf("Спасибо за игру, возвращяйтесь\n");
 
-
     system("PAUSE");
     return 0;
 }
-
