@@ -71,7 +71,7 @@ bool Exit(bool exit) // Проверяем хочет ли пользовате�
     return exit;
 } //
 
-bool Comparator(char *Val_One, bool *Quit) // сравнивает значения вводимые пользователем с программными
+bool Comparator(char *Val_One, bool *Quit) // сравнивает значения
 {
     char Val_Two;
     printf("\n |\\\\\\| ");
@@ -88,26 +88,28 @@ bool Comparator(char *Val_One, bool *Quit) // сравнивает значен�
     return false;
 }
 
-void Pattern_Read(FILE *Res) // Исполняемое тело для режимов работающих с файлами
+void Pattern_Read(FILE *Res)
 {
     bool Quit = false;
     long int Score = 0;
     int n = 0, j = 0;
     char Text[60] = {}, Val_One;
 
-    fscanf(Res,"%d",&n);
-    int sz;
+
     while(Quit != true)
     {
         rewind(Res);
-        fgets(Text,60,Res);
-        sz = rand()% n+1;
+        fscanf(Res,"%d",&n);
+
+        //fgetc(Res);
+        int sz;
+        sz = rand()%n+1;
         for(int i = 0; i < sz; i++)
         {
             fgets(Text,60,Res);
         }
 
-        for (int k = 0; k < strlen(Text); k++)
+        for (int k = 0; k < strlen(Text)-1; k++)
         {
             do
             {
@@ -116,7 +118,7 @@ void Pattern_Read(FILE *Res) // Исполняемое тело для режи�
                 printf("Для выхода введите - !\n\t\t\tСчёт: %d", Score);
                 printf("\n|||||||: ");
                 Val_One = Text[j];
-                for(j; j < strlen(Text);j++)
+                for(j; j < strlen(Text)-1;j++)
                 {
                     printf("%c", Text[j]);
                 }
@@ -221,7 +223,7 @@ void Words_and_Numbers()
 
     fclose(Res);
 }
-void Duel(int Mode, int Difficulty) // подключаем модуль режима на основе выбранных параметров
+void Duel(int Mode, int Difficulty)
 {
     if(Mode == 1)
     {
@@ -272,7 +274,7 @@ int main ()
         system("cls");                                          //
         printf("\tПривет, хочешь преисполниться в печати?\n");  //
         Prepare(&Mode, &Difficulty);                            // выбираем режим игры и уровень сложности
-        printf("\n%d %d\n", Mode, Difficulty);                  // выводим значения, которые выбрал пользователь
+        //printf("\n%d %d\n", Mode, Difficulty);                  // выводим значения, которые выбрал пользователь
         Duel(Mode, Difficulty);
 
         system("PAUSE");                                        //
