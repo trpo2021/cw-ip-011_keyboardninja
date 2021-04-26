@@ -1,6 +1,6 @@
-APP_NAME = chessviz
-LIB_NAME = libchessviz
-TEST_NAME = chessviz-test
+APP_NAME = KBNinja
+LIB_NAME = libKBNinja
+TEST_NAME = KBNinja-test
 
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
