@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <locale.h>
 #include <time.h>
-#include <conio.h>
 #include <string.h>
 
 void Prepare (int *Mode, int *Difficulty) // выбираем режим сложности тренировки

@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <locale.h>
 #include <time.h>
-#include <conio.h>
 #include <string.h>
 
 bool Comparator(char *Val_One, bool *Quit) // Закончить игру
