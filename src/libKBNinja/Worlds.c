@@ -5,6 +5,7 @@
 #include <conio.h>
 #include <string.h>
 #include <libKBNinja/Comparator.h>
+#include <libKBNinja/Pattern_read.h>
 
 void Words_One()
 {
@@ -32,4 +33,23 @@ void Words_One()
         }while(Comparator(&Val_One, &Quit) != true);
 
     }while (Quit == false);
+}
+void Words_Two()
+{
+
+    FILE *Res;
+    Res = fopen("text/l2.txt","r");
+
+    Pattern_Read(Res);
+
+    fclose(Res);
+}
+void Words_Three()
+{
+    FILE *Res;
+    Res = fopen("text/l3.txt","r");
+
+    Pattern_Read(Res);
+
+    fclose(Res);
 }
