@@ -6,12 +6,12 @@
 #include <string.h>
 #include <libKBNinja/Pattern_read.h>
 
-void Words_and_Numbers()
+void Words_and_Numbers(int testing)
 {
     FILE *Res;
     Res = fopen("text/lan.txt","r");
 
-    Pattern_Read(Res);
+    Pattern_Read(Res, testing);
 
     fclose(Res);
 }

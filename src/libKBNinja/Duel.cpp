@@ -8,41 +8,41 @@
 #include <libKBNinja/Numbers.h>
 #include <libKBNinja/Worlds_and_Numbers.h>
 
-void Duel(int Mode, int Difficulty)
+void Duel(int Mode, int Difficulty, int testing)
 {
     if(Mode == 1)
     {
         if(Difficulty == 1)
         {
-            Words_One();
+            Words_One(testing);
         }
         else if(Difficulty == 2)
         {
-            Words_Two();
+            Words_Two(testing);
         }
         else if(Difficulty == 3)
         {
-            Words_Three();
+            Words_Three(testing);
         }
     }
     else if(Mode == 2)
     {
         if(Difficulty == 1)
         {
-            Numbers_One();
+            Numbers_One(testing);
         }
         else if(Difficulty == 2)
         {
-            Numbers_Two();
+            Numbers_Two(testing);
         }
         else if(Difficulty == 3)
         {
-            Numbers_Three();
+            Numbers_Three(testing);
         }
     }
     else if(Mode == 3)
     {
-        Words_and_Numbers();
+        Words_and_Numbers(testing);
     }
 }
 

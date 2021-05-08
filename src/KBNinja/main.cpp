@@ -19,19 +19,19 @@ int main ()
     setlocale(0,"Russian");
     srand(time(NULL));
 
-    int Mode = 0, Difficulty = 0;
+    int Mode = 0, Difficulty = 0, testing = 0;
     bool Game = true;
 
     while(Game) // Вся логика программы
     {
         system("cls");                                          //
         printf("\tПривет, хочешь преисполниться в печати?\n");  //
-        Prepare(&Mode, &Difficulty);                            // выбираем режим игры и уровень сложности
+        Prepare(&Mode, &Difficulty, testing);                            // выбираем режим игры и уровень сложности
         //printf("\n%d %d\n", Mode, Difficulty);                  // выводим значения, которые выбрал пользователь
-        Duel(Mode, Difficulty);
+        Duel(Mode, Difficulty, testing);
 
         system("PAUSE");                                        //
-        Game = Exit(&Game);                                     // Проверяем хочет ли пользователь потренироваться ещщё раз или нет
+        Game = Exit(&Game, testing);                                     // Проверяем хочет ли пользователь потренироваться ещщё раз или нет
     }
     system("cls");
     printf("Спасибо за игру, возвращяйтесь\n");

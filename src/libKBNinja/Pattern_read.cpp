@@ -8,7 +8,7 @@
 
 
 
-void Pattern_Read(FILE *Res)
+void Pattern_Read(FILE *Res, int testing)
 {
     bool Quit = false;
     long int Score = 0;
@@ -42,7 +42,7 @@ void Pattern_Read(FILE *Res)
                 {
                     printf("%c", Text[j]);
                 }
-            }while(Comparator(&Val_One, &Quit) != true);
+            }while(Comparator(&Val_One, &Quit, testing) != true);
             if(Quit == true)
             {
                 break;

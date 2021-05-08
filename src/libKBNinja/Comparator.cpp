@@ -5,11 +5,16 @@
 #include <conio.h>
 #include <string.h>
 
-bool Comparator(char *Val_One, bool *Quit) // Закончить игру
+bool Comparator(char *Val_One, bool *Quit, int testing) // Закончить игру
 {
     char Val_Two;
-    printf("\n |\\\\\\| ");
-    Val_Two = getch();
+	if (!testing)
+	{
+		printf("\n |\\\\\\| ");
+    	Val_Two = getch();
+	}
+    else
+    	Val_Two = '!';
     if(Val_Two == '!')
     {
         *Quit = true;

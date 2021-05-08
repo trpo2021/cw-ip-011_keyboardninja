@@ -8,7 +8,7 @@
 #include <libKBNinja/Pattern_read.h>
 
 
-void Numbers_One()
+void Numbers_One(int testing)
 {
     char Val_One;
     bool Quit = false;
@@ -22,11 +22,11 @@ void Numbers_One()
             system("cls");
             printf("ƒл€ выхода введите - !\n\t\t\t —чЄт: %d", Score);
             printf("\n|||||||: %c\n", Val_One);
-        }while(Comparator(&Val_One, &Quit) != true);
+        }while(Comparator(&Val_One, &Quit, testing) != true);
 
     }while (Quit == false);
 }
-void Numbers_Two()
+void Numbers_Two(int testing)
 {
     FILE *Res;
     Res = fopen("text/n2.txt","r");
@@ -35,7 +35,7 @@ void Numbers_Two()
 
     fclose(Res);
 }
-void Numbers_Three()
+void Numbers_Three(int testing)
 {
     FILE *Res;
     Res = fopen("text/n3.txt","r");
