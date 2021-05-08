@@ -2,7 +2,7 @@ APP_NAME = KBNinja
 LIB_NAME = libKBNinja
 TEST_NAME = KBNinja-test
 
-CC = gcc
+CC = g++
 CFLAGS = -Wall -Wextra -Werror
 CPPFLAGS = -I src -I thirdparty -MP -MMD
 LDFLAGS =
