@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <locale.h>
 #include <time.h>
-#include <conio.h>
 #include <string.h>
 
 bool Exit(bool exit, int testing) // ѕровер€ем хочет ли пользователь закончить игру

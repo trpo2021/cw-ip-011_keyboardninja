@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <locale.h>
 #include <time.h>
-#include <conio.h>
 #include <string.h>
 
 bool Comparator(char *Val_One, bool *Quit, int testing) // Закончить игру
@@ -11,7 +10,7 @@ bool Comparator(char *Val_One, bool *Quit, int testing) // Закончить игру
 	if (!testing)
 	{
 		printf("\n |\\\\\\| ");
-    	Val_Two = getch();
+    	Val_Two = getchar();
 	}
     else
     	Val_Two = '!';
