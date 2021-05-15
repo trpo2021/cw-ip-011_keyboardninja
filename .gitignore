@@ -1,8 +1,8 @@
 *.exe
 # Prerequisites
 *.d
-bin/chessviz
-bin/chessviz-test
+bin/KBNinja
+bin/KBNinja-test
 
 # Compiled Object files
 *.slo
