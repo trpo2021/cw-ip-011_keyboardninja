@@ -18,7 +18,7 @@ int main ()
     setlocale(0,"Russian");
     srand(time(NULL));
 
-    int Mode = 0, Difficulty = 0, testing = 0;
+    int Mode = 0, Difficulty = 0, testing;
     bool Game = true;
 
     while(Game) // Вся логика программы
