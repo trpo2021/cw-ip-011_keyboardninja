@@ -1,3 +1,3 @@
 #pragma once
 
-void Duel();
+void Duel(int Mode, int Difficulty, int testing);
