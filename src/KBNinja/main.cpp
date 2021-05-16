@@ -18,22 +18,22 @@ int main ()
     setlocale(0,"Russian");
     srand(time(NULL));
 
-    int Mode = 0, Difficulty = 0, testing;
+    int Mode = 0, Difficulty = 0, testing = 0;
     bool Game = true;
 
-    while(Game) // Вся логика программы
+    while(Game) // Г‚Г±Гї Г«Г®ГЈГЁГЄГ  ГЇГ°Г®ГЈГ°Г Г¬Г¬Г»
     {
         system("cls");                                          //
-        printf("\tПривет, хочешь преисполниться в печати?\n");  //
-        Prepare(&Mode, &Difficulty, testing);                            // выбираем режим игры и уровень сложности
-        //printf("\n%d %d\n", Mode, Difficulty);                  // выводим значения, которые выбрал пользователь
+        printf("\tГЏГ°ГЁГўГҐГІ, ГµГ®Г·ГҐГёГј ГЇГ°ГҐГЁГ±ГЇГ®Г«Г­ГЁГІГјГ±Гї Гў ГЇГҐГ·Г ГІГЁ?\n");  //
+        Prepare(&Mode, &Difficulty, testing);                            // ГўГ»ГЎГЁГ°Г ГҐГ¬ Г°ГҐГ¦ГЁГ¬ ГЁГЈГ°Г» ГЁ ГіГ°Г®ГўГҐГ­Гј Г±Г«Г®Г¦Г­Г®Г±ГІГЁ
+        //printf("\n%d %d\n", Mode, Difficulty);                  // ГўГ»ГўГ®Г¤ГЁГ¬ Г§Г­Г Г·ГҐГ­ГЁГї, ГЄГ®ГІГ®Г°Г»ГҐ ГўГ»ГЎГ°Г Г« ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гј
         Duel(Mode, Difficulty, testing);
 
         system("PAUSE");                                        //
-        Game = Exit(&Game, testing);                                     // Проверяем хочет ли пользователь потренироваться ещщё раз или нет
+        Game = Exit(&Game, testing);                                     // ГЏГ°Г®ГўГҐГ°ГїГҐГ¬ ГµГ®Г·ГҐГІ Г«ГЁ ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гј ГЇГ®ГІГ°ГҐГ­ГЁГ°Г®ГўГ ГІГјГ±Гї ГҐГ№Г№Вё Г°Г Г§ ГЁГ«ГЁ Г­ГҐГІ
     }
     system("cls");
-    printf("Спасибо за игру, возвращяйтесь\n");
+    printf("Г‘ГЇГ Г±ГЁГЎГ® Г§Г  ГЁГЈГ°Гі, ГўГ®Г§ГўГ°Г Г№ГїГ©ГІГҐГ±Гј\n");
 
     system("PAUSE");
     return 0;
