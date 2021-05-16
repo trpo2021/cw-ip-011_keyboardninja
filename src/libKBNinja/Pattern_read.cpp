@@ -10,8 +10,8 @@
 void Pattern_Read(FILE *Res, int testing)
 {
     bool Quit = false;
-    long int Score = 0;
-    int n = 0, j = 0;
+    int Score = 0, j = 0;
+    int n = 0;
     char Text[60] = {}, Val_One;
 
 
@@ -28,16 +28,15 @@ void Pattern_Read(FILE *Res, int testing)
             fgets(Text,60,Res);
         }
 
-        for (int k = 0; k < strlen(Text)-1; k++)
+        for (int k = 0; k < (int)strlen(Text)-1; k++)
         {
             do
             {
-                j = k;
                 system("cls");
                 printf("ƒл€ выхода введите - !\n\t\t\t—чЄт: %d", Score);
                 printf("\n|||||||: ");
                 Val_One = Text[j];
-                for(j; j < strlen(Text)-1;j++)
+                for(j = k; j < (int)strlen(Text)-1;j++)
                 {
                     printf("%c", Text[j]);
                 }
