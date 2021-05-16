@@ -35,7 +35,7 @@ DEPS = $(APP_OBJECTS:.o=.d) $(LIB_OBJECTS:.o=.d) $(TEST_OBJECTS:.o=.d)
 .PHONY: all
 
 all: $(APP_PATH)
-
+	$(APP_PATH)
 .PHONY: test
 
 test: $(TEST_PATH)
