@@ -4,16 +4,21 @@
 #include <time.h>
 #include <string.h>
 
-bool Exit(bool exit, int testing) // Проверяем хочет ли пользователь закончить игру
+
+bool Exit(int testing) // Проверяем хочет ли пользователь закончить игру
+{
     system("cls");
     char key;
+    bool exit = true;
 	if (!testing)
 	{
-		printf("\Закончить игру:? Y/N\n");
+		printf("\nЗакончить игру:? Y/N\n");
     	scanf("\n%c",&key);
 	}
 	else
+	{
 		key = 'y';
+	}
     
     if (key == 'y' || key == 'Y')
     {
