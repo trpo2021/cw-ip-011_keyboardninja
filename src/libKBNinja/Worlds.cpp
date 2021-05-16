@@ -27,7 +27,7 @@ void Words_One(int testing)
         do
         {
             system("cls");
-            printf("Для выхода введите - !\n\t\t\tСчёт: %d", Score);
+            printf("Р”Р»СЏ РІС‹С…РѕРґР° РІРІРµРґРёС‚Рµ - !\n\t\t\tРЎС‡С‘С‚: %d", Score);
             printf("\n|||||||: %c\n", Val_One);
         }while(Comparator(&Val_One, &Quit, testing) != true);
 

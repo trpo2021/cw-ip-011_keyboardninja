@@ -21,19 +21,19 @@ int main ()
     int Mode = 0, Difficulty = 0, testing = 0;
     bool Game = true;
 
-    while(Game) // Âñÿ ëîãèêà ïðîãðàììû
+    while(Game) // Вся логика программы
     {
         system("cls");                                          //
-        printf("\tÏðèâåò, õî÷åøü ïðåèñïîëíèòüñÿ â ïå÷àòè?\n");  //
-        Prepare(&Mode, &Difficulty, testing);                            // âûáèðàåì ðåæèì èãðû è óðîâåíü ñëîæíîñòè
-        //printf("\n%d %d\n", Mode, Difficulty);                  // âûâîäèì çíà÷åíèÿ, êîòîðûå âûáðàë ïîëüçîâàòåëü
+        printf("\tПривет, хочешь преисполниться в печати?\n");  //
+        Prepare(&Mode, &Difficulty, testing);                            //  выбираем режим игры и уровень сложности
+        //printf("\n%d %d\n", Mode, Difficulty);                  // выводим значения, которые выбрал пользователь
         Duel(Mode, Difficulty, testing);
 
         system("PAUSE");                                        //
-        Game = Exit(testing);                                     // Ïðîâåðÿåì õî÷åò ëè ïîëüçîâàòåëü ïîòðåíèðîâàòüñÿ åùù¸ ðàç èëè íåò
+        Game = Exit(testing);                                     // Проверяем хочет ли пользователь потренироваться ещё раз или нет
     }
     system("cls");
-    printf("Ñïàñèáî çà èãðó, âîçâðàùÿéòåñü\n");
+    printf("Спасибо за игру, возвращайтесь!\n");
 
     system("PAUSE");
     return 0;
