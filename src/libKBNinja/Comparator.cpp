@@ -4,7 +4,7 @@
 #include <time.h>
 #include <string.h>
 
-bool Comparator(char *Val_One, bool *Quit, int testing) // Закончить игру
+bool Comparator(char *Val_One, bool *Quit, int testing) // СЃСЂР°РІРЅРёРІР°РµС‚ Р·РЅР°С‡РµРЅРёСЏ
 {
     char Val_Two;
 	if (!testing)

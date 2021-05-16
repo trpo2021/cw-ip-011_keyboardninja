@@ -5,14 +5,14 @@
 #include <string.h>
 
 
-bool Exit(int testing) // Проверяем хочет ли пользователь закончить игру
+bool Exit(int testing) // РџСЂРѕРІРµСЂСЏРµРј С…РѕС‡РµС‚ Р»Рё РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ Р·Р°РєРѕРЅС‡РёС‚СЊ РёРіСЂСѓ
 {
     system("cls");
     char key;
     bool exit = true;
 	if (!testing)
 	{
-		printf("\nЗакончить игру:? Y/N\n");
+		printf("\nР—Р°РєРѕРЅС‡РёС‚СЊ РёРіСЂСѓ:? Y/N\n");
     	scanf("\n%c",&key);
 	}
 	else

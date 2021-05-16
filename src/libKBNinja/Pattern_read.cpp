@@ -33,7 +33,7 @@ void Pattern_Read(FILE *Res, int testing)
             do
             {
                 system("cls");
-                printf("Для выхода введите - !\n\t\t\tСчёт: %d", Score);
+                printf("Р”Р»СЏ РІС‹С…РѕРґР° РІРІРµРґРёС‚Рµ - !\n\t\t\tРЎС‡С‘С‚: %d", Score);
                 printf("\n|||||||: ");
                 Val_One = Text[j];
                 for(j = k; j < (int)strlen(Text)-1;j++)
