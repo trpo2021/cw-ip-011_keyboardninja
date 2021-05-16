@@ -30,7 +30,7 @@ int main ()
         Duel(Mode, Difficulty, testing);
 
         system("PAUSE");                                        //
-        Game = Exit(&Game, testing);                                     // Ïðîâåðÿåì õî÷åò ëè ïîëüçîâàòåëü ïîòðåíèðîâàòüñÿ åùù¸ ðàç èëè íåò
+        Game = Exit(testing);                                     // Ïðîâåðÿåì õî÷åò ëè ïîëüçîâàòåëü ïîòðåíèðîâàòüñÿ åùù¸ ðàç èëè íåò
     }
     system("cls");
     printf("Ñïàñèáî çà èãðó, âîçâðàùÿéòåñü\n");
