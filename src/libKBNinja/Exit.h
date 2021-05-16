@@ -1,3 +1,3 @@
 #pragma once
 
-bool Exit(bool exit, int testing);
+bool Exit(int testing);
