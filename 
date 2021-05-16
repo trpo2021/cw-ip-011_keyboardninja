@@ -1,0 +1,92 @@
+* [33mec83b9d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mprogrammtests[m[33m)[m Add files
+* [33mcc1cc67[m[33m ([m[1;31morigin/programmtests[m[33m)[m Add CI
+* [33mbd4f81d[m Remove the typo
+*   [33m161af9b[m Merge branch 'issue#10' into programmtests
+[32m|[m[33m\[m  
+[32m|[m * [33m7280304[m[33m ([m[1;32missue#10[m[33m)[m Fix problems with artifacts because of wrong encoding
+[32m|[m[32m/[m  
+* [33m01a2aaa[m Поправлен тест
+* [33ma5a1e78[m Вернул функцию
+* [33m327d1c9[m Устранение ошибок компиляции
+* [33m492524f[m Устранение ошибок компиляции
+* [33mf1e12e7[m Устранение ошибок компиляции
+* [33m542886b[m Устранение ошибок компиляции
+* [33m83646ec[m Устранение ошибок компиляции
+* [33mc5c541d[m Устранение ошибок компиляции
+* [33m1eb41ad[m Устранение ошибок компиляции
+* [33mee39098[m Устранение ошибок компиляции
+* [33mc24eb98[m Устранение ошибок компиляции
+* [33m02757ce[m Устранение ошибок компиляции
+* [33m450c82e[m Устранение ошибок компиляции
+* [33m80e4055[m Устранение ошибок компиляции
+* [33m14c5ebb[m Устранение ошибок компиляции
+* [33md313bc4[m Устранение ошибок компиляции
+* [33m776e483[m Устранение ошибок компиляции
+* [33mbbc0630[m Устранение ошибок компиляции
+* [33m43268c0[m Изменение параметров сборки
+* [33m9c99f1f[m Удаление ненужных файлов
+* [33m147d9dd[m Удаление ненужных файлов
+* [33m53ae561[m Удаление ненужных файлов
+* [33m5ae8859[m Удаление ненужных файлов
+* [33m511b5e3[m Удаление ненужных файлов
+* [33m566bcb3[m Изменение расширения
+* [33m6664114[m Update main.cpp
+* [33mf91eaa5[m fix problems with header files
+* [33m4e582a7[m testing some problems with testing
+* [33mc44f5a1[m Change extension from c to cpp
+* [33m8c09e13[m Change SRC_EXT from c to cpp
+* [33m83b50a4[m Change .gitignore
+* [33md2f95df[m Delete conio.h header file everywhere due to coding problems
+* [33mf8d474b[m Change code for testing. Add situations when need test or usuall programm
+* [33m890c53e[m Add structure for tests
+* [33m8a12a2e[m Add structure for tests
+* [33m36ae091[m Fix bugs
+* [33m0cb9ecb[m Fix bugs
+[33m|[m * [33me91af09[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m Change gitignore
+[33m|[m * [33m9473dd4[m Change the language from Russian to English due to coding problems
+[33m|[m [34m|[m * [33m424150c[m[33m ([m[1;31morigin/bugfix[m[33m)[m Delete conio.h header file from all 8 files
+[33m|[m [34m|[m * [33m894b1c2[m Change extension from c->cpp for all 8 files
+[33m|[m [34m|[m * [33mb628aa8[m Change getch() to getchar()
+[33m|[m [34m|[m * [33mdf8d780[m Change file extension from c to cpp
+[33m|[m [34m|[m * [33m0bbc793[m Delete cohio.h header file
+[33m|[m [34m|[m[33m/[m  
+[33m|[m[33m/[m[34m|[m   
+* [34m|[m [33md7cf7e0[m[33m ([m[1;31morigin/test[m[33m)[m Split the code into functions
+* [34m|[m [33mc053bc7[m Add eighth function
+* [34m|[m [33mfc88065[m Add seventh function
+* [34m|[m [33m5c587eb[m Add sixth function
+* [34m|[m [33m8338116[m Change code
+* [34m|[m [33m43404ee[m Cnange name of files
+* [34m|[m [33md831a6b[m Add fifth function
+* [34m|[m [33mfac3408[m Add fourth function
+* [34m|[m [33m5086aa5[m Add third function
+* [34m|[m [33m214e574[m Add second function
+* [34m|[m [33mae84133[m Change code
+* [34m|[m [33m9b20292[m Change format from cpp to c
+* [34m|[m [33m8e4fed7[m Add first function
+[34m|[m[34m/[m  
+* [33m515cc10[m Add gitignore
+* [33me7016f5[m Modified Makefile
+* [33mf8daad7[m Add Makefile
+* [33mc4febea[m Change code
+* [33me00e4f1[m Rename files
+* [33m146e94d[m Add clang-format
+* [33mf97a9c9[m Create structure for project
+* [33mb2080bb[m Create structure for project
+* [33mbd6a71c[m Create structure for project
+* [33m7c6a2de[m Create structure for project
+* [33mc4124b3[m Create structure for project
+* [33m2d653db[m Fixed bug in main.cpp file
+* [33m272eb37[m The finished version of the executable file for the beta release
+* [33m3c43e58[m In main.cpp added features of the 1st level of difficulty
+* [33m0a162a8[m The main.cpp file was created
+* [33m2eb41a9[m Create file with sentences with numbers for third mode
+* [33m8f6f3e7[m Create file with equations for third difficulty for second mode
+* [33m8f171d6[m Create file with numbers for second difficulty for second mode
+* [33mae01b1a[m Create file with sentences for third difficulty for first mode
+* [33m97bb590[m Create file with words for second difficulty for first mode
+* [33m16d7a5e[m Update README.md
+* [33m7532d12[m Update README.md
+* [33mf4e9b75[m Create README.md
+* [33m8d7a757[m Setting up GitHub Classroom Feedback
+* [33m8af0fab[m[33m ([m[1;31morigin/feedback[m[33m)[m GitHub Classroom Feedback
