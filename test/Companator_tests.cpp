@@ -17,7 +17,7 @@ CTEST(suite1, COMPARATOR_TEST1)
 	int testing = 1;
 	char tval1 = '%';
 	bool testq = false;
-	Comparator(tval1, testq, testing);
+	Comparator(&tval1, &testq, testing);
 	ASSERT_TRUE(testq);
 }
 
@@ -27,6 +27,6 @@ CTEST(suite1, COMPARATOR_TEST2)
 	int testing = 1;
 	char tval2 = '!';
 	bool testq2 = true, k;
-	k = Comparator(tval2, testq2, testing);
+	k = Comparator(&tval2, &testq2, testing);
 	ASSERT_TRUE(k);
 }
