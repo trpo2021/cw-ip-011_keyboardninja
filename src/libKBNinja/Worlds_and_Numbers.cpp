@@ -5,10 +5,10 @@
 #include <string.h>
 #include <libKBNinja/Pattern_read.h>
 
-void Words_and_Numbers(int testing)
+void Words_and_Numbers(char *Name,int testing)
 {
     FILE *Res;
-    Res = fopen("text/lan.txt","r");
+    Res = fopen(Name,"r");
 
     Pattern_Read(Res, testing);
 
