@@ -11,7 +11,7 @@ void Numbers_One(int testing)
 {
     char Val_One;
     bool Quit = false;
-    long int Score = -1;
+    int Score = -1;
     do
     {
         Val_One = '0' + rand()%10;
@@ -24,22 +24,4 @@ void Numbers_One(int testing)
         }while(Comparator(&Val_One, &Quit, testing) != true);
 
     }while (Quit == false);
-}
-void Numbers_Two(int testing)
-{
-    FILE *Res;
-    Res = fopen("text/n2.txt","r");
-
-    Pattern_Read(Res);
-
-    fclose(Res);
-}
-void Numbers_Three(int testing)
-{
-    FILE *Res;
-    Res = fopen("text/n3.txt","r");
-
-    Pattern_Read(Res);
-
-    fclose(Res);
 }
