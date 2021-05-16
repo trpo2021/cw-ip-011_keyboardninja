@@ -17,14 +17,14 @@ CTEST(suite2, Exit_test1)
 {
 	bool texit = true;
 	int testing = 1;
-	Exit(texit, testing);
+	texit = Exit(testing);
 	ASSERT_TRUE(texit);
 }
 
 CTEST(suite2, Exit_test2_allwaysfalse)
 {
-	bool texit = true;
+	bool texit = false;
 	int testing = 1;
-	Exit(texit, testing);
+	texit = Exit(testing);
 	ASSERT_FALSE(texit);	
 }
