@@ -7,7 +7,7 @@
 #include <libKBNinja/Numbers.h>
 #include <libKBNinja/Worlds_and_Numbers.h>
 
-void Duel(int Mode, int Difficulty, int testing)
+void Duel(int Mode, int Difficulty, int testing) // запуск текстов на основе выбранного уровня сложности
 {
     if(Mode == 1)
     {
@@ -17,11 +17,13 @@ void Duel(int Mode, int Difficulty, int testing)
         }
         else if(Difficulty == 2)
         {
-            Words_Two(testing);
+            char Name [] = {"text/l2.txt"};
+            Words_and_Numbers(Name,testing);
         }
         else if(Difficulty == 3)
         {
-            Words_Three(testing);
+            char Name [] = {"text/l3.txt"};
+            Words_and_Numbers(Name,testing);
         }
     }
     else if(Mode == 2)
@@ -32,16 +34,18 @@ void Duel(int Mode, int Difficulty, int testing)
         }
         else if(Difficulty == 2)
         {
-            Numbers_Two(testing);
+            char Name [] = {"text/n2.txt"};
+            Words_and_Numbers(Name,testing);
         }
         else if(Difficulty == 3)
         {
-            Numbers_Three(testing);
+            char Name [] = {"text/n3.txt"};
+            Words_and_Numbers(Name,testing);
         }
     }
     else if(Mode == 3)
     {
-        Words_and_Numbers(testing);
+        char Name [] = {"text/lan.txt"};
+        Words_and_Numbers(Name,testing);
     }
 }
-
