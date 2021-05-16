@@ -10,7 +10,7 @@ bool Comparator(char *Val_One, bool *Quit, int testing) // Закончить игру
 	if (!testing)
 	{
 		printf("\n |\\\\\\| ");
-    	Val_Two = getchar();
+    	Val_Two = getch();
 	}
     else
     	Val_Two = '!';
