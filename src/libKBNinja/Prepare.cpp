@@ -40,7 +40,7 @@ void Prepare (int *Mode, int *Difficulty, int testing) // выбираем режим сложнос
         {
         	if (!testing)
         	{
-        		printf("\Вы выбрали слова\n");
+        		printf("\nВы выбрали слова\n");
             	printf("\n\t1 - Вводить по 1-й букве\n\t2 - Вводить по слову\n\t3 - Вводить предложения\n");
         	}
             
