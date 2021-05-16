@@ -10,7 +10,7 @@ void Words_One(int testing)
 {
     char Val_One;
     int Option;
-    long int Score = -1;
+    int Score = -1;
     bool Quit = false;
     do
     {
@@ -32,22 +32,4 @@ void Words_One(int testing)
         }while(Comparator(&Val_One, &Quit, testing) != true);
 
     }while (Quit == false);
-}
-void Words_Two(int testing)
-{
-    FILE *Res;
-    Res = fopen("text/l2.txt","r");
-
-    Pattern_Read(Res, testing);
-
-    fclose(Res);
-}
-void Words_Three(int testing)
-{
-    FILE *Res;
-    Res = fopen("text/l3.txt","r");
-
-    Pattern_Read(Res, testing);
-
-    fclose(Res);
 }
