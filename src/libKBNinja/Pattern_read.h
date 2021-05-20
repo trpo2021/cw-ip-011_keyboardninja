@@ -1,3 +1,3 @@
 #pragma once
 
-void Pattern_Read(FILE *Res, int testing);
+void Pattern_Read(FILE* Res, int testing);
