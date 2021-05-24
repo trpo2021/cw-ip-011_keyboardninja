@@ -1,4 +1,4 @@
-#include <libKBNinja/Comparator.h>
+#include "Comparator.h"
 #include <locale.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -25,13 +25,15 @@ void Pattern_Read(FILE* Res, int testing)
 
         for (int k = 0; k < (int)strlen(Text) - 1; k++) {
             do {
+                j = k;
                 system("cls");
                 printf("Для выхода введите - !\n\t\t\tСчёт: %d", Score);
                 printf("\n|||||||: ");
                 Val_One = Text[j];
-                for (j = k; j < (int)strlen(Text) - 1; j++) {
+                for (j; j < (int)strlen(Text) - 1; j++) {
                     printf("%c", Text[j]);
                 }
+                printf("<");
             } while (Comparator(&Val_One, &Quit, testing) != true);
             if (Quit == true) {
                 break;
