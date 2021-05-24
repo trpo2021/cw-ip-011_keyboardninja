@@ -1,5 +1,5 @@
-#include <libKBNinja/Comparator.h>
-#include <libKBNinja/Pattern_read.h>
+#include "Comparator.h"
+#include "Pattern_read.h"
 #include <locale.h>
 #include <stdio.h>
 #include <stdlib.h>
