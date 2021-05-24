@@ -4,10 +4,10 @@
 #include <time.h>
 #include <string.h>
 #include <ctest.h>
-#include <libKBNinja/Comparator.h>
+#include "../libKBNinja/Comparator.h"
 
 
-	
+
 CTEST(suite1, PUSTOI)
 {
 }
