@@ -4,7 +4,7 @@
 #include <time.h>
 #include <string.h>
 #include <ctest.h>
-#include <libKBNinja/Exit.h>
+#include "../libKBNinja/Exit.h"
 
 
 // Тесты проверяют вывод булевской функции
@@ -26,5 +26,5 @@ CTEST(suite2, Exit_test2_allwaysfalse)
 	bool texit = false;
 	int testing = 1;
 	texit = Exit(testing);
-	ASSERT_FALSE(texit);	
+	ASSERT_FALSE(texit);
 }
