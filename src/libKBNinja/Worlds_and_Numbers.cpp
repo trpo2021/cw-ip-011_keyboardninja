@@ -1,4 +1,4 @@
-#include <libKBNinja/Pattern_read.h>
+#include "Pattern_read.h"
 #include <locale.h>
 #include <stdio.h>
 #include <stdlib.h>
