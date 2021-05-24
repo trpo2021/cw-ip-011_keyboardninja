@@ -1,6 +1,6 @@
-#include <libKBNinja/Numbers.h>
-#include <libKBNinja/Worlds.h>
-#include <libKBNinja/Worlds_and_Numbers.h>
+#include "Numbers.h"
+#include "Worlds.h"
+#include "Worlds_and_Numbers.h"
 #include <locale.h>
 #include <stdio.h>
 #include <stdlib.h>
