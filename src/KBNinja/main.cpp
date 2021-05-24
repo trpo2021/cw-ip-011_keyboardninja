@@ -1,20 +1,22 @@
-#include <libKBNinja/Comparator.h>
-#include <libKBNinja/Duel.h>
-#include <libKBNinja/Exit.h>
-#include <libKBNinja/Numbers.h>
-#include <libKBNinja/Pattern_read.h>
-#include <libKBNinja/Prepare.h>
-#include <libKBNinja/Worlds.h>
-#include <libKBNinja/Worlds_and_Numbers.h>
+#include "../libKBNinja/Comparator.h"
+#include "../libKBNinja/Duel.h"
+#include "../libKBNinja/Exit.h"
+#include "../libKBNinja/Numbers.h"
+#include "../libKBNinja/Pattern_read.h"
+#include "../libKBNinja/Prepare.h"
+#include "../libKBNinja/Worlds.h"
+#include "../libKBNinja/Worlds_and_Numbers.h"
 #include <locale.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <windows.h>
 
 int main()
 {
-    setlocale(0, "Russian");
+    SetConsoleOutputCP( 65001 );
+    setlocale(LC_ALL, NULL);
     srand(time(NULL));
 
     int Mode = 0, Difficulty = 0, testing = 0;
