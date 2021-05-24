@@ -3,13 +3,14 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <conio.h>
 
-bool Comparator(char* Val_One, bool* Quit, int testing) // сравнивает значения
+bool Comparator(char* Val_One, bool* Quit, int testing) // СЃСЂР°РІРЅРёРІР°РµС‚ Р·РЅР°С‡РµРЅРёСЏ
 {
     char Val_Two;
     if (!testing) {
         printf("\n |\\\\\\| ");
-        Val_Two = getchar();
+        Val_Two = getch();
     } else
         Val_Two = '!';
     if (Val_Two == '!') {
