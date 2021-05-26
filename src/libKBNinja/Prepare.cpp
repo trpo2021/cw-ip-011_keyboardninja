@@ -4,7 +4,7 @@
 #include <string.h>
 #include <time.h>
 
-void Prepare(
+int Prepare(
         int* Mode,
         int* Difficulty,
         int testing) // выбираем режим сложности тренировки
@@ -22,6 +22,9 @@ void Prepare(
         if (*Mode < 1 || *Mode > 3) {
             if (!testing) {
                 printf("\nОшибка, введите корректный параметр\n");
+            }
+            else{
+            return NULL;
             }
             system("PAUSE");
             *Mode = 0;
@@ -62,8 +65,12 @@ void Prepare(
             scanf("\n%d", Difficulty);
 
         if (*Difficulty < 1 || *Difficulty > 3) {
-            if (!testing)
+            if (!testing){
                 printf("\nОшибка, введите корректный параметр\n");
+                }
+            else{
+            return NULL;
+            }
             system("PAUSE");
             *Difficulty = 0;
         }
