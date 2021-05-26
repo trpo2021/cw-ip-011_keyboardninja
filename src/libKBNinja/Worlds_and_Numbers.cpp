@@ -5,12 +5,15 @@
 #include <string.h>
 #include <time.h>
 
-void Words_and_Numbers(char* Name, int testing)
+FILE* Words_and_Numbers(char* Name, int testing)
 {
     FILE* Res;
     Res = fopen(Name, "r");
-
-    Pattern_Read(Res, testing);
-
+    if(!testing){
+        Pattern_Read(Res, testing);
+        }
+     else{
+        return Res;
+     }
     fclose(Res);
 }

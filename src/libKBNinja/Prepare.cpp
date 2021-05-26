@@ -50,6 +50,7 @@ void Prepare(
             }
 
         } else if (*Mode == 3) {
+            *Difficulty = 1;
             if (!testing) {
                 printf("\n\tТут присутствует только 1 уровень сложности, "
                        "удачи!\n");

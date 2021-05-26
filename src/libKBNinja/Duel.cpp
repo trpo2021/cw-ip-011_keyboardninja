@@ -7,16 +7,24 @@
 #include <string.h>
 #include <time.h>
 
-void Duel(
+int Duel(
         int Mode,
         int Difficulty,
         int testing) // запуск текстов на основе выбранного уровня сложности
 {
-    if (Mode == 1) {
+    if ( Difficulty > 3 || Difficulty < 1){
+        return NULL;
+        }
+    if(Mode == 1) {
         if (Difficulty == 1) {
             Words_One(testing);
         } else if (Difficulty == 2) {
+            if (!testing){
             char Name[] = {"text/l2.txt"};
+            }
+            else{
+            char Name[] = {"test.txt"};
+            }
             Words_and_Numbers(Name, testing);
         } else if (Difficulty == 3) {
             char Name[] = {"text/l3.txt"};
@@ -36,4 +44,7 @@ void Duel(
         char Name[] = {"text/lan.txt"};
         Words_and_Numbers(Name, testing);
     }
+    else {
+        return NULL;
+        }
 }
