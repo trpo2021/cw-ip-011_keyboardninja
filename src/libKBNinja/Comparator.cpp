@@ -11,8 +11,9 @@ bool Comparator(char* Val_One, bool* Quit, int testing) // СЃСЂР°РІРЅ�
     if (!testing) {
         printf("\n |\\\\\\| ");
         Val_Two = getch();
-    } else
-        Val_Two = '!';
+    } else{
+        Val_Two = (char)testing;
+        }
     if (Val_Two == '!') {
         *Quit = true;
         return true;
