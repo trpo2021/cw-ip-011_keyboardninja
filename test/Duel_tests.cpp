@@ -23,10 +23,17 @@ CTEST(suite3, Duel_test2)
 	n = Duel(tmode, tdif, test);
 	ASSERT_NULL(n);
 }
-// Проверим, что будет, если ввести несуществующий файл
+// Проверим, что будет, если открыть файл
 CTEST(suite3, Duel_test3)
 {
-	int tmode = 1, tdif = 2, test = 1, n;
+	int tmode = 1, tdif = 2, test = 1, n, k = 1;
 	n = Duel(tmode, tdif, test);
-	ASSERT_NULL(n);
+	ASSERT_EQUAL(k, n);
+}
+ // Проверим, что будет, если открыть несуществующий  файл
+CTEST(suite3, Duel_test4)
+{
+	int tmode = 1, tdif = 3, test = 1, n, k = 1;
+	n = Duel(tmode, tdif, test);
+	ASSERT_NOT_EQUAL(k, n);
 }

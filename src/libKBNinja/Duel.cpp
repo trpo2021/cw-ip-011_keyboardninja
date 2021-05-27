@@ -24,10 +24,17 @@ int Duel(
             }
             else{
             char Name[] = {"test.txt"};
+            return 1
             }
             Words_and_Numbers(Name, testing);
         } else if (Difficulty == 3) {
+            if(!testing){
             char Name[] = {"text/l3.txt"};
+            }
+            else{
+            char Name[] = {"test/qw.txt"};
+            return NULL;
+            }
             Words_and_Numbers(Name, testing);
         }
     } else if (Mode == 2) {

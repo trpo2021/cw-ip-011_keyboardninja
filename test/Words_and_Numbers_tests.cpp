@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
 #include <time.h>
@@ -14,7 +14,7 @@ CTEST(suite4, PUSTOI)
    FILE* real;
    int test = 1;
     real=Words_and_Numbers("test/test.txt", test);
-    ASSERT_NOT_NULL(real;
+    ASSERT_NOT_NULL(real);
 }
  CTEST(suite4, Words_and_Numbers2)
 {
