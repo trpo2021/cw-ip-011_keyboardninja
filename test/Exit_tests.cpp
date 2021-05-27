@@ -47,7 +47,7 @@ CTEST(suite2, Exit_test3)
 	bool texit = false;
 	int testing ='å' ;
 	texit = Exit(testing);
-	ASSERT_FALSE(texit);
+	ASSERT_TRUE(texit);
 }
 CTEST(suite2, Exit_test4)
 {
