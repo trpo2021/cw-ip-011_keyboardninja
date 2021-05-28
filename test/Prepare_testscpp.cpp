@@ -21,3 +21,9 @@ CTEST(suite5, Prepare2)
     n = Prepare(tmode, tdif, test);
     ASSERT_NULL(n);
 }
+CTEST(suite5, Prepare3)
+{
+    int tmode = 1, tdif = 1, test =1, n, k = 1;
+    n = Prepare(tmode, tdif, test);
+    ASSERT_EQUAL(k ,n);
+}

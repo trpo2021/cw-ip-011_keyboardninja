@@ -10,11 +10,13 @@ int Prepare(
         int testing) // выбираем режим сложности тренировки
 {
     system("PAUSE");
-    *Mode = 0, *Difficulty = 0;
+    if (!testing){
+        *Mode = 0, *Difficulty = 0;
+        }
     while (*Mode == 0) // выбираем что будем печатать
     {
-        system("cls");
         if (!testing) {
+        system("cls");
             printf("\n\n Выбери режим тренировки:\n\t1 - Только буквы\n\t2 - "
                    "Только цифры\n\t3 - Буквы и цифры\n");
             scanf("%d", Mode);
@@ -44,6 +46,9 @@ int Prepare(
                 printf("\n\t1 - Вводить по 1-й букве\n\t2 - Вводить по "
                        "слову\n\t3 - Вводить предложения\n");
             }
+        else if (Difficulty == 1){
+                 return 1;
+            }
 
         } else if (*Mode == 2) {
             if (!testing) {
@@ -61,9 +66,9 @@ int Prepare(
 
             break;
         }
-        if (!testing)
+        if (!testing){
             scanf("\n%d", Difficulty);
-
+         }
         if (*Difficulty < 1 || *Difficulty > 3) {
             if (!testing){
                 printf("\nОшибка, введите корректный параметр\n");
