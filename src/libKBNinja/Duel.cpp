@@ -23,8 +23,8 @@ int Duel(
             char Name[] = {"text/l2.txt"};
             }
             else{
-            char Name[] = {"test.txt"};
-            return 1
+            char Name[] = {"test/test.txt"};
+            return 1;
             }
             Words_and_Numbers(Name, testing);
         } else if (Difficulty == 3) {
