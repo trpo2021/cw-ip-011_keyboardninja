@@ -38,7 +38,7 @@ CTEST(suite2, Exit_test2)
 CTEST(suite2, Exit_test2_2)
 {
 	bool texit = false;
-	int testing ='n' ;
+	int testing ='N' ;
 	texit = Exit(testing);
 	ASSERT_TRUE(texit);
 }
