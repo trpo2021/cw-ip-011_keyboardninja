@@ -1,3 +1,3 @@
 #pragma once
 
-bool Comparator(char* Val_One, bool* Quit, int testing);
+bool Comparator(char* Val_One,char* Val_Two, bool* Quit, int testing);
