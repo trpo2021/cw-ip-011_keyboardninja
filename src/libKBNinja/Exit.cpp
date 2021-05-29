@@ -4,8 +4,7 @@
 #include <string.h>
 #include <time.h>
 
-bool Exit(int testing) // Проверяем хочет ли пользователь закончить игру
-{
+bool Exit(int testing) { // Проверяем хочет ли пользователь закончить игру
     system("cls");
     char key;
     bool exit = true;
