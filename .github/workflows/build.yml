@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Check codestyle
-	run: Get-ChildItem -Include *.cpp, *.h -Recurse | Foreach { clang-format -i -verbose $_ }
+        run: Get-ChildItem -Include *.cpp, *.h -Recurse | Foreach { clang-format -i -verbose $_ }
 
       - name: Build application 
         run: make
