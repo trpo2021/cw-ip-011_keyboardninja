@@ -3,10 +3,7 @@
 *.d
 bin/KBNinja
 bin/KBNinja-test
-<<<<<<< HEAD
 
-=======
->>>>>>> Graphics
 # Compiled Object files
 *.slo
 *.lo
