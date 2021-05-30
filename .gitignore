@@ -3,7 +3,10 @@
 *.d
 bin/KBNinja
 bin/KBNinja-test
+<<<<<<< HEAD
 
+=======
+>>>>>>> Graphics
 # Compiled Object files
 *.slo
 *.lo
@@ -35,3 +38,8 @@ bin/KBNinja-test
 *.app
 
 .vs/
+<<<<<<< HEAD
+=======
+!src/SDL/**
+!src/SDL/*.*
+>>>>>>> Graphics

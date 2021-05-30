@@ -5,14 +5,12 @@
 #include <time.h>
 
 void Prepare(
-        int* Mode,
-        int* Difficulty,
-        int testing) // выбираем режим сложности тренировки
-{
+    int* Mode,
+    int* Difficulty,
+    int testing) { // выбираем режим сложности тренировки
     system("PAUSE");
     *Mode = 0, *Difficulty = 0;
-    while (*Mode == 0) // выбираем что будем печатать
-    {
+    while (*Mode == 0) { // выбираем что будем печатать
         system("cls");
         if (!testing) {
             printf("\n\n Выбери режим тренировки:\n\t1 - Только буквы\n\t2 - "
@@ -28,8 +26,7 @@ void Prepare(
         }
     }
 
-    while (*Difficulty == 0) // выбираем как будем печатать
-    {
+    while (*Difficulty == 0) { // выбираем как будем печатать
         if (!testing) {
             system("cls");
             printf("\nВыберите сложность печати:\n");
