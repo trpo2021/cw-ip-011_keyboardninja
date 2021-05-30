@@ -3,7 +3,7 @@
 *.d
 bin/KBNinja
 bin/KBNinja-test
-
+!src/SDL
 # Compiled Object files
 *.slo
 *.lo
