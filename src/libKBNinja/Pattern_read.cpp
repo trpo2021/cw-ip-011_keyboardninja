@@ -12,7 +12,7 @@
 #define SCREEN_WIGHT 1280
 #define SCREEN_HIGH 720
 
-void Pattern_Read(SDL_Renderer **MainRender, SDL_Texture **MainTexture, TTF_Font **MainFont, int *Screen, FILE* Res, int testing)//шаблон для считывания файлов с текстами
+int Pattern_Read(SDL_Renderer **MainRender, SDL_Texture **MainTexture, TTF_Font **MainFont, int *Screen, FILE* Res, int testing)//шаблон для считывания файлов с текстами
 {
     SDL_Event Event;
     SDL_Rect Box, Box_Score;
@@ -22,8 +22,18 @@ void Pattern_Read(SDL_Renderer **MainRender, SDL_Texture **MainTexture, TTF_Font
     int n = 0;
     char Text[35] = {}, Val_One, Val_Two;
     while (Quit != true) {
-        rewind(Res);
-        fscanf(Res, "%d", &n);
+        if(!testing){
+            rewind(Res);
+            fscanf(Res, "%d", &n);
+            }
+        else{
+             rewind(Res);
+             if (Res != NULL){
+                return 1;
+                }
+            else{
+                return 0;
+                }
         int sz;
         sz = rand() % n + 1;
         for (int i = 0; i < sz; i++) { // считывается по 35 символов, со случайного места
