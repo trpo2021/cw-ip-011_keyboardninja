@@ -9,8 +9,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Add clang path to $PATH env
+        shell: bash
+        if: runner.os == 'Windows'
+        run: echo "PATH=$PATH:C:\msys64\mingw64\bin" >> $GITHUB_ENV
+
       - name: Check codestyle
-        run: Get-ChildItem -Include *.cpp, *.h -Recurse | Foreach { .clang-format -i -verbose $_ }
+        run: Get-ChildItem -Include *.cpp, *.h -Recurse | Foreach { clang-format -i -verbose $_ }
 
       - name: Build application 
         run: make
