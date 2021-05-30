@@ -7,14 +7,14 @@
 #include <string.h>
 #include <time.h>
 
-void Duel(
+int Duel(
     SDL_Renderer **MainRender,
     SDL_Texture **MainTexture,
     TTF_Font **MainFont,
     int *Mode,
     int *Difficulty,
     int *Screen,
-    int testing) { // ?????? ??????? ?? ?????? ?????????? ?????? ?????????
+    int testing) { // запуск текстов на основе выбранного уровня сложности
     if (*Mode == 1) {
         if (*Difficulty == 1) {
             Words_One(MainRender,MainTexture,MainFont,Screen, testing);
@@ -25,6 +25,9 @@ void Duel(
             char Name[] = {"text/l3.txt"};
             Words_and_Numbers(MainRender,MainTexture,MainFont,Name, Screen, testing);
         }
+            else{
+            return 0;
+            }
     } else if (*Mode == 2) {
         if (*Difficulty == 1) {
             Numbers_One(MainRender,MainTexture,MainFont,Screen, testing);
@@ -39,4 +42,7 @@ void Duel(
         char Name[] = {"text/lan.txt"};
         Words_and_Numbers(MainRender,MainTexture,MainFont,Name, Screen, testing);
     }
+    else{
+        return 0;
+        }
 }
