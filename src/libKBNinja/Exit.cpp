@@ -12,11 +12,14 @@ bool Exit(int testing) { // Проверяем хочет ли пользова�
         printf("\nЗакончить игру:? Y/N\n");
         scanf("\n%c", &key);
     } else {
-        key = 'y';
+        key = (char)testing;
     }
 
     if (key == 'y' || key == 'Y') {
         exit = false;
+    }
+    else if (key == 'n' || key == 'N'){
+        exit = true;
     }
     return exit;
 }

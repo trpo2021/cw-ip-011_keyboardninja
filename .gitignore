@@ -12,6 +12,7 @@ bin/KBNinja-test
 *.lo
 *.o
 *.obj
+*.save
 
 # Precompiled Headers
 *.gch
