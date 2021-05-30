@@ -11,19 +11,14 @@ CTEST(suite5, PUSTOI)
 }
  CTEST(suite5, Prepare1)
 {
-    int tmode = 4, tdif = 1, test =1, n;
-    n = Prepare(tmode, tdif, test);
-    ASSERT_NULL(n);
-}
-CTEST(suite5, Prepare2)
-{
-    int tmode = 1, tdif = 0, test =1, n;
-    n = Prepare(tmode, tdif, test);
-    ASSERT_NULL(n);
-}
-CTEST(suite5, Prepare3)
-{
-    int tmode = 1, tdif = 1, test =1, n, k = 1;
+  int tmode = 4, tdif = 1, test =1, n, k = 1;
     n = Prepare(tmode, tdif, test);
     ASSERT_EQUAL(k ,n);
 }
+CTEST(suite5, Prepare2)
+{
+ int tmode = 1, tdif = 4, test =1, n, k = 1;
+    n = Prepare(tmode, tdif, test);
+    ASSERT_EQUAL(k ,n);
+}
+
