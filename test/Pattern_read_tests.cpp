@@ -1,5 +1,4 @@
 #include "../libKBNinja/Trpo_SDL.h"
-#include "Comparator.h"
 #include <locale.h>
 #include <stdio.h>
 #include <stdlib.h>
