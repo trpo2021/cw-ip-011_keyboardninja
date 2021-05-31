@@ -17,18 +17,18 @@ CTEST(suite3, PUSTOI)
 //Следующие два теста проверяют, что будет, если ввести mode и difficulty вне их значений. Делаю через equal, так как не работает null. ПОэттому ввел константу k =1
 CTEST(suite3, Duel_test1)
 {
-	SDL_Renderer **MainRender;
-	SDL_Texture **MainTexture;
-	TTF_Font **MainFont;
+	SDL_Renderer **MainRender = NULL;
+	SDL_Texture **MainTexture = NULL;
+	TTF_Font **MainFont = NULL;
 	int tmode = 4, tdif = 1, test = 0, n, k = 1, screen = 0;
 	n = Duel(MainRender,MainTexture,MainFont, &tmode, &tdif, &screen, test);
 	ASSERT_NOT_EQUAL(k, n);
 }
 CTEST(suite3, Duel_test2)
 {
-	SDL_Renderer **MainRender;
-	SDL_Texture **MainTexture;
-	TTF_Font **MainFont;
+	SDL_Renderer **MainRender = NULL;
+	SDL_Texture **MainTexture = NULL;
+	TTF_Font **MainFont = NULL;
 	int tmode = 1, tdif = 4, test = 0, n, k =1, screen = 0;
 	n = Duel(MainRender,MainTexture,MainFont, &tmode, &tdif, &screen, test);
 	ASSERT_NOT_EQUAL(k, n);

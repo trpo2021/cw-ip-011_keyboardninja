@@ -15,22 +15,20 @@ CTEST(suite1, PUSTOI)
 // Тесты должен проверить, выводит ли функция булевские переменные.
 CTEST(suite1, COMPARATOR_TEST1)
 {
-	int testing = '1';
 	char tval1 = '%';
 	char tval2 = '%';
-	bool testq = false, qw= true;
-	qw = Comparator(&tval1, &tval2, &testq, testing);
+	bool qw= true;
+	qw = Comparator(&tval1, &tval2);
 	ASSERT_TRUE(qw);
 }
 
 
 CTEST(suite1, COMPARATOR_TEST2)
 {
-	int testing = '1';
 	char tval1 = '%';
 	char tval2 = '!';
-	bool testq2 = true, k = true;
-	k = Comparator(&tval1, &tval2, &testq2, testing);
+	bool k = true;
+	k = Comparator(&tval1, &tval2);
 	ASSERT_FALSE(k);
 }
 

@@ -4,9 +4,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include <SDL.h>
-#include <SDL_image.h>
-#include <SDL_ttf.h>
+#include "../src/SDL/include/SDL2/SDL.h"
+#include "../src/SDL/include/SDL2/SDL_image.h"
+#include "../src/SDL/include/SDL2/SDL_ttf.h"
 #include <math.h>
 #define SCREEN_WIGHT 1280
 #define SCREEN_HIGH 720
@@ -18,23 +18,23 @@ CTEST(suite4, PUSTOI)
 }
  CTEST(suite4, Pattern_read1)
 {
-    SDL_Renderer **MainRender;
-    SDL_Texture **MainTexture;
-    TTF_Font **MainFont;
-   FILE* Name;
-   Name = fopen("test/test.txt");
-   int test = 1, screen = 1, real = 0, k = 1;
-    real=Pattern_read(SDL_Renderer **MainRender, SDL_Texture **MainTexture, TTF_Font **MainFont, &screen, &Name, test);
-    ASSERT_EQUAL(k, real);
+	SDL_Renderer **MainRender = NULL;
+	SDL_Texture **MainTexture = NULL;
+	TTF_Font **MainFont = NULL;
+	FILE* Name;
+	Name = fopen("test/test.txt","r");
+	int test = 1, screen = 1, real = 0, k = 1;
+	real=Pattern_Read(MainRender,MainTexture,MainFont, &screen, Name, test);
+	ASSERT_EQUAL(k, real);
 }
  CTEST(suite4, Pattern_read2)
 {
-    SDL_Renderer **MainRender;
-    SDL_Texture **MainTexture;
-    TTF_Font **MainFont;
-    FILE* Name;
-   Name = fopen("qw/test.txt");
-   int test = 1, screen = 1, real = 0, k = 1;
-    real=Pattern_read(SDL_Renderer **MainRender, SDL_Texture **MainTexture, TTF_Font **MainFont, &screen, &Name, test);
-    ASSERT_NOT_EQUAL(k, real);
+	SDL_Renderer **MainRender = NULL;
+	SDL_Texture **MainTexture = NULL;
+	TTF_Font **MainFont = NULL;
+    	FILE* Name;
+	Name = fopen("qw/test.txt","r");
+	int test = 1, screen = 1, real = 0, k = 1;
+	real=Pattern_Read(MainRender,MainTexture,MainFont, &screen, Name, test);
+	ASSERT_NOT_EQUAL(k, real);
 }
