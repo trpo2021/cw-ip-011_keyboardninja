@@ -4,15 +4,13 @@ on: push
 
 jobs:
   build:
-    runs-on: windows-latest
-
-    matrix:
-      os: [ubuntu-latest, macOS-latest, windows-latest]
-      compiler: [gcc, clang]
-      exclude:
-        - os: windows-latest
-          compiler: clang
-
+    strategy:
+      matrix: [ubuntu-latest, macOS-latest, windows-latest]
+        os: [ubuntu-latest, macOS-latest, windows-latest]
+        compiler: [gcc, clang]
+        exclude:
+          - os: windows-latest
+            compiler: clang
     steps:
       - uses: actions/checkout@2
 
