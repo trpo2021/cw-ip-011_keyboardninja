@@ -1,4 +1,4 @@
-#include "../libKBNinja/Trpo_SDL.h"
+#include "../src/libKBNinja/Trpo_SDL.h"
 #include <locale.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,7 +11,7 @@
 #define SCREEN_WIGHT 1280
 #define SCREEN_HIGH 720
 #include <ctest.h>
-#include "../libKBNinja/Pattern_read.h"
+#include "../src/libKBNinja/Pattern_read.h"
 // Тесты будут проверять, как открывается файл
 CTEST(suite4, PUSTOI)
 {

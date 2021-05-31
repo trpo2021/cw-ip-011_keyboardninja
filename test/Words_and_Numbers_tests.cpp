@@ -10,7 +10,7 @@
 #define SCREEN_WIGHT 1280
 #define SCREEN_HIGH 720
 #include <ctest.h>
-#include "../libKBNinja/Words_and_Numbers.h"
+#include "../src/libKBNinja/Words_and_Numbers.h"
 // Тесты будут проверять, как открывается файл
 CTEST(suite4, PUSTOI)
 {

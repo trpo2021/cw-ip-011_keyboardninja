@@ -5,7 +5,7 @@
 #include <time.h>
 #include <math.h>
 #include <ctest.h>
-#include "../libKBNinja/Comparator.h"
+#include "../src/libKBNinja/Comparator.h"
 
 
 

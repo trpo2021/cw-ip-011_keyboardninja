@@ -4,7 +4,7 @@
 #include <time.h>
 #include <string.h>
 #include <ctest.h>
-#include "../libKBNinja/Prepare.h"
+#include "../src/libKBNinja/Prepare.h"
 // Тесты будут проверять, что будет, если ввести mode и difficult > 3 или < 0
 CTEST(suite5, PUSTOI)
 {
