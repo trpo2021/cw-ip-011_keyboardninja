@@ -5,7 +5,7 @@ on: push
 jobs:
   build:
     strategy:
-      matrix: [ubuntu-latest, macOS-latest, windows-latest]
+      matrix:
         os: [ubuntu-latest, macOS-latest, windows-latest]
         compiler: [gcc, clang]
         exclude:
