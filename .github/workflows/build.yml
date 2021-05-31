@@ -26,4 +26,5 @@ jobs:
         run: make CC=${{matrix.compiler}}
 
       - name: Build and launch test 
+        shell: bash
         run: make test
