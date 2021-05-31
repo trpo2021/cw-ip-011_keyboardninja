@@ -6,7 +6,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <locale.h>
-#include "conio.h"
 #define SCREEN_WIGHT 1280
 #define SCREEN_HIGH 720
 
