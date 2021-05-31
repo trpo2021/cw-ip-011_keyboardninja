@@ -42,7 +42,7 @@ void Copy_Render(SDL_Texture **MainTexture,SDL_Surface **Background, SDL_Rendere
     *MainTexture = SDL_CreateTextureFromSurface(*MainRender,*Background);
     SDL_RenderCopy(*MainRender,*MainTexture,NULL,Box);
 }
-void Print_Text(SDL_Renderer **MainRender, SDL_Texture **MainTexture, TTF_Font **MainFont, char *Text, SDL_Rect *Box) { //Вывод теста
+void Print_Text(SDL_Renderer **MainRender, SDL_Texture **MainTexture, TTF_Font **MainFont,const char *Text, SDL_Rect *Box) { //Вывод теста
     SDL_Surface *TextSurface;
     SDL_Color Color;
     Color.a = 255;
