@@ -3,7 +3,7 @@
     {
       "name": "Should not commit binary files",
       "setup": "",
-      "run": "find . -exec file '{}' \\; | Select-String  '(ELF|PE32)' ; test $? -eq 1",
+      "run": "find . -exec file '{}' \\; | egrep  '(ELF|PE32)' ; test $? -eq 1",
       "input": "",
       "output": "",
       "comparison": "included",

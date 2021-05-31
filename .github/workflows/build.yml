@@ -4,25 +4,13 @@ on: push
 
 jobs:
   build:
-    strategy:
-      matrix:
-        os: [ubuntu-latest, macOS-latest, windows-latest]
-        compiler: [gcc, clang]
-        exclude:
-          - os: windows-latest
-            compiler: clang
+    runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@2
+      - uses: actions/checkout@v2
 
-      - name: Add clang path to $PATH env 
-        shell: bash
-        if: runner.os == 'Windows'
-        run: echo "PATH=$PATH:C:\msys64\mingw64\bin" >> $GITHUB_ENV
+      - name: Check codestyle
+        run: git ls-files *.{c,h} | xargs clang-format -i --verbose && git diff --exit-code
 
-      - name: Build (with ${{matrix.compiler}}, for ${{matrix.os}}) 
-        shell: bash
-        run: make CC=${{matrix.compiler}}
-
-      - name: Build and launch test 
-        shell: bash
-        run: make test
+      - name: Build application
+        run: make
