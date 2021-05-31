@@ -1,6 +1,6 @@
-#include <SDL.h>
-#include <SDL_image.h>
-#include <SDL_ttf.h>
+#include "../SDL/include/SDL2/SDL.h"
+#include "../SDL/include/SDL2/SDL_image.h"
+#include "../SDL/include/SDL2/SDL_ttf.h"
 #pragma once
 
 void Load (SDL_Window **MainWindow,  SDL_Renderer **MainRender, SDL_Surface **MainSurface, TTF_Font **MainFont);

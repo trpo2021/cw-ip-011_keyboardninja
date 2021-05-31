@@ -1,12 +1,12 @@
-#include <SDL.h>
-#include <SDL_image.h>
-#include <SDL_ttf.h>
+#include "../SDL/include/SDL2/SDL.h"
+#include "../SDL/include/SDL2/SDL_image.h"
+#include "../SDL/include/SDL2/SDL_ttf.h"
 #include "Trpo_SDL.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <locale.h>
-#include <conio.h>
+#include "conio.h"
 #define SCREEN_WIGHT 1280
 #define SCREEN_HIGH 720
 
