@@ -1,3 +1,3 @@
 #pragma once
 
-void Comparator();
+void Comparator(char* Val_One, bool* Quit);

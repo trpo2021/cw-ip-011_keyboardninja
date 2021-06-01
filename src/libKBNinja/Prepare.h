@@ -1,3 +1,3 @@
 #pragma once
 
-void Prepare();
+void Prepare(int* Mode, int* Difficulty);
