@@ -1,14 +1,14 @@
+#include <libKBNinja/Pattern_read.h>
+#include <locale.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <locale.h>
-#include <time.h>
 #include <string.h>
-#include <libKBNinja/Pattern_read.h>
+#include <time.h>
 
 void Words_and_Numbers()
 {
-    FILE *Res;
-    Res = fopen("text/lan.txt","r");
+    FILE* Res;
+    Res = fopen("text/lan.txt", "r");
 
     Pattern_Read(Res);
 

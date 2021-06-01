@@ -1,34 +1,31 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <locale.h>
-#include <time.h>
-#include <string.h>
 #include <libKBNinja/Comparator.h>
 #include <libKBNinja/Pattern_read.h>
-
+#include <locale.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
 
 void Numbers_One()
 {
     char Val_One;
     bool Quit = false;
     long int Score = -1;
-    do
-    {
-        Val_One = '0' + rand()%10;
+    do {
+        Val_One = '0' + rand() % 10;
         Score++;
-        do
-        {
+        do {
             system("cls");
             printf("Для выхода введите - !\n\t\t\t Счёт: %d", Score);
             printf("\n|||||||: %c\n", Val_One);
-        }while(Comparator(&Val_One, &Quit) != true);
+        } while (Comparator(&Val_One, &Quit) != true);
 
-    }while (Quit == false);
+    } while (Quit == false);
 }
 void Numbers_Two()
 {
-    FILE *Res;
-    Res = fopen("text/n2.txt","r");
+    FILE* Res;
+    Res = fopen("text/n2.txt", "r");
 
     Pattern_Read(Res);
 
@@ -36,8 +33,8 @@ void Numbers_Two()
 }
 void Numbers_Three()
 {
-    FILE *Res;
-    Res = fopen("text/n3.txt","r");
+    FILE* Res;
+    Res = fopen("text/n3.txt", "r");
 
     Pattern_Read(Res);
 

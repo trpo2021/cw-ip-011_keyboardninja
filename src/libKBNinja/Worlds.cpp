@@ -1,10 +1,10 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <locale.h>
-#include <time.h>
-#include <string.h>
 #include <libKBNinja/Comparator.h>
 #include <libKBNinja/Pattern_read.h>
+#include <locale.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
 
 void Words_One()
 {
@@ -12,32 +12,27 @@ void Words_One()
     int Option;
     long int Score = -1;
     bool Quit = false;
-    do
-    {
-        Option = rand()%2;
-        if(Option == 0)
-        {
-            Val_One = 'a' + rand()%26;
+    do {
+        Option = rand() % 2;
+        if (Option == 0) {
+            Val_One = 'a' + rand() % 26;
         }
-        if(Option == 1)
-        {
-            Val_One = 'A' + rand()%26;
+        if (Option == 1) {
+            Val_One = 'A' + rand() % 26;
         }
         Score++;
-        do
-        {
+        do {
             system("cls");
             printf("Для выхода введите - !\n\t\t\tСчёт: %d", Score);
             printf("\n|||||||: %c\n", Val_One);
-        }while(Comparator(&Val_One, &Quit) != true);
+        } while (Comparator(&Val_One, &Quit) != true);
 
-    }while (Quit == false);
+    } while (Quit == false);
 }
 void Words_Two()
 {
-
-    FILE *Res;
-    Res = fopen("text/l2.txt","r");
+    FILE* Res;
+    Res = fopen("text/l2.txt", "r");
 
     Pattern_Read(Res);
 
@@ -45,8 +40,8 @@ void Words_Two()
 }
 void Words_Three()
 {
-    FILE *Res;
-    Res = fopen("text/l3.txt","r");
+    FILE* Res;
+    Res = fopen("text/l3.txt", "r");
 
     Pattern_Read(Res);
 
