@@ -4,11 +4,11 @@
 #include <time.h>
 #include <string.h>
 
-bool Exit(bool exit) // Проверяем хочет ли пользователь закончить игру
+bool Exit(bool exit) // РџСЂРѕРІРµСЂСЏРµРј С…РѕС‡РµС‚ Р»Рё РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ Р·Р°РєРѕРЅС‡РёС‚СЊ РёРіСЂСѓ
     system("cls");
     char key;
 
-    printf("\Закончить игру:? Y/N\n");
+    printf("\Р—Р°РєРѕРЅС‡РёС‚СЊ РёРіСЂСѓ:?Y/N\n");
     scanf("\n%c",&key);
 
     if (key == 'y' || key == 'Y')

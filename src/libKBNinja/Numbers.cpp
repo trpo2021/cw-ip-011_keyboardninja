@@ -19,7 +19,7 @@ void Numbers_One()
         do
         {
             system("cls");
-            printf("Для выхода введите - !\n\t\t\t Счёт: %d", Score);
+            printf("Р”Р»СЏ РІС‹С…РѕРґР° РІРІРµРґРёС‚Рµ - !\n\t\t\t РЎС‡С‘С‚: %d", Score);
             printf("\n|||||||: %c\n", Val_One);
         }while(Comparator(&Val_One, &Quit) != true);
 
