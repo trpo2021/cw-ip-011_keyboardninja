@@ -6,16 +6,15 @@
 #include "../libKBNinja/Prepare.h"
 #include "../libKBNinja/Worlds.h"
 #include "../libKBNinja/Worlds_and_Numbers.h"
-/*#include <SDL.h>
-#include <SDL_image.h>
-#include <SDL_ttf.h>*/
+#include "../SDL/include/SDL2/SDL.h"
+#include "../SDL/include/SDL2/SDL_image.h"
+#include "../SDL/include/SDL2/SDL_ttf.h"
 #include "../libKBNinja/Trpo_SDL.h"
 #include <locale.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include <windows.h>
 /*int main()
 >>>>>>> Graphics
 {
@@ -71,8 +70,7 @@
     return 0;
 }*/
 
-int main (int argc, char *args[]) {
-    SetConsoleOutputCP( 65001 );
+int main () {
     setlocale(LC_ALL, "Russian");
     srand(time(NULL));
 
