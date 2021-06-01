@@ -31,7 +31,7 @@ int Pattern_Read(SDL_Renderer **MainRender, SDL_Texture **MainTexture, TTF_Font 
              if (Res != NULL){
                 return 1;
                 }
-            return 0;
+            else return 0;
         int sz;
         sz = rand() % n + 1;
         for (int i = 0; i < sz; i++) { // считывается по 35 символов, со случайного места
@@ -103,4 +103,5 @@ int Pattern_Read(SDL_Renderer **MainRender, SDL_Texture **MainTexture, TTF_Font 
         }
     }
 }
+return 0;
 }

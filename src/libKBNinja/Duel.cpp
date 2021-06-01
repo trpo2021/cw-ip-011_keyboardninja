@@ -17,7 +17,7 @@ int Duel(
     int testing) { // запуск текстов на основе выбранного уровня сложности
     if (*Mode == 1) {
         if (*Difficulty == 1) {
-            Words_One(MainRender,MainTexture,MainFont,Screen, testing);
+            Words_One(MainRender,MainTexture,MainFont,Screen);
         } else if (*Difficulty == 2) {
             char Name[] = {"text/l2.txt"};
             Words_and_Numbers(MainRender,MainTexture,MainFont,Name, Screen, testing);

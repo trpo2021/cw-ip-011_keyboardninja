@@ -23,9 +23,7 @@ int Prepare(
                 system("PAUSE");
                 *Mode = 0;
             }
-            else{
                 return 0;
-                }
         }
     }
 
@@ -66,9 +64,8 @@ int Prepare(
                 system("PAUSE");
                 *Difficulty = 0;
                 }
-            else{
                 return 0;
-                }
         }
     }
+return 0;
 }

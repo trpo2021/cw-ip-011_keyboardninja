@@ -10,7 +10,7 @@
 #define SCREEN_WIGHT 1280
 #define SCREEN_HIGH 720
 
-void Words_One(SDL_Renderer **MainRender, SDL_Texture **MainTexture, TTF_Font **MainFont, int *Screen, int testing) {
+void Words_One(SDL_Renderer **MainRender, SDL_Texture **MainTexture, TTF_Font **MainFont, int *Screen) {
     srand(time(NULL));
     SDL_Event Event;
     SDL_Rect Box, Box_Score;
@@ -40,7 +40,7 @@ void Words_One(SDL_Renderer **MainRender, SDL_Texture **MainTexture, TTF_Font **
         SDL_RenderPresent(*MainRender);
         do {
             Val_Two = 0;
-            while(SDL_PollEvent(&Event) != NULL) {
+            while(SDL_PollEvent(&Event)) {
                 if(Event.type == SDL_QUIT) {
                     Quit = true;
                 } else if(Event.key.keysym.sym == ';') {
@@ -58,6 +58,6 @@ void Words_One(SDL_Renderer **MainRender, SDL_Texture **MainTexture, TTF_Font **
             if(Val_Two == 0) {
                 continue;
             }
-        } while (Comparator(&Val_One[0], &Val_Two, &Quit, testing) != true);
+        } while (Comparator(&Val_One[0], &Val_Two) != true);
     } while (Quit == false);
 }
