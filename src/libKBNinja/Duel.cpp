@@ -25,9 +25,6 @@ int Duel(
             char Name[] = {"text/l3.txt"};
             Words_and_Numbers(MainRender,MainTexture,MainFont,Name, Screen, testing);
         }
-            else{
-            return 0;
-            }
     } else if (*Mode == 2) {
         if (*Difficulty == 1) {
             Numbers_One(MainRender,MainTexture,MainFont,Screen, testing);
@@ -42,7 +39,5 @@ int Duel(
         char Name[] = {"text/lan.txt"};
         Words_and_Numbers(MainRender,MainTexture,MainFont,Name, Screen, testing);
     }
-    else{
-        return 0;
-        }
+	return 0;
 }
