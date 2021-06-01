@@ -15,10 +15,6 @@ bool Words_and_Numbers(SDL_Renderer **MainRender, SDL_Texture **MainTexture, TTF
     else if (Res != NULL){
         return 1;
         }
-    else{
-        return 0;
-        }
-
-
+	return 0;
     fclose(Res);
 }
