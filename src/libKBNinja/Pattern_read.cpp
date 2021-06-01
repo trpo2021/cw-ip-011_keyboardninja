@@ -5,9 +5,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include <SDL.h>
-#include <SDL_image.h>
-#include <SDL_ttf.h>
+#include "../SDL/include/SDL2/SDL.h"
+#include "../SDL/include/SDL2/SDL_image.h"
+#include "../SDL/include/SDL2/SDL_ttf.h"
 #include <math.h>
 #define SCREEN_WIGHT 1280
 #define SCREEN_HIGH 720
@@ -31,9 +31,7 @@ int Pattern_Read(SDL_Renderer **MainRender, SDL_Texture **MainTexture, TTF_Font 
              if (Res != NULL){
                 return 1;
                 }
-            else{
-                return 0;
-                }
+            return 0;
         int sz;
         sz = rand() % n + 1;
         for (int i = 0; i < sz; i++) { // считывается по 35 символов, со случайного места
@@ -64,7 +62,7 @@ int Pattern_Read(SDL_Renderer **MainRender, SDL_Texture **MainTexture, TTF_Font 
             char Text_Free[(int)strlen(Text)-k+2] = {};
 
             Val_One = Text[j];
-            for (j; j < (int)strlen(Text) - 1; j++) {
+            for (j=k; j < (int)strlen(Text) - 1; j++) {
                 Text_Free[j-k] = Text[j];
             }
             Text_Free[(int)strlen(Text_Free)] = '<';
@@ -75,7 +73,7 @@ int Pattern_Read(SDL_Renderer **MainRender, SDL_Texture **MainTexture, TTF_Font 
 
             do {
                 Val_Two = 0;
-                while(SDL_PollEvent(&Event) != NULL)
+                while(SDL_PollEvent(&Event))
                 {
                     if(Event.type == SDL_QUIT)
                     {
@@ -97,11 +95,12 @@ int Pattern_Read(SDL_Renderer **MainRender, SDL_Texture **MainTexture, TTF_Font 
                 }
                 SDL_Delay (50);
 
-            } while (Comparator(&Val_One,&Val_Two, &Quit, testing) != true);
+            } while (Comparator(&Val_One,&Val_Two) != true);
             if (Quit == true) {
                 break;
             }
             Score++;
         }
     }
+}
 }
